@@ -72,7 +72,7 @@ const createGridItem = () => {
   };
   const mousedownPen = (e) => {
     e.preventDefault();
-    cellListerner(squareItem);
+    gridItemListener(squareItem);
   }
 
   squareItem.addEventListener('mousedown', mousedownPen)
