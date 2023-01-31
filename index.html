@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <title>Etch A Sketch</title>
+</head>
+<body>
+
+  <div class="main-container">
+    
+    <header class="header"><H1>Etch A Sketch</H1></header>
+    
+    <div class="body">
+
+      <div class="left-bar">
+        
+        <!-- Setting -->
+        <div class="settings">
+
+          <div class="setting--item border-padding">
+            <button id="eraser-button" class="eraser-button tooltip-button">Eraser</button>
+            <button id="pen-button" class="pen-button tooltip-button">Pen</button>
+          </div>
+    
+          <div class="setting--item">
+            <button id="clear-button">Clear</button>
+          </div>
+    
+          <div class="setting--item">
+            <div class="input--container">
+              <label for="grid-slider" class="input--label">Size</label>
+              <input type="range" name="size" id="grid-slider" min="16" max="100">
+              <p class="input--value-label">value: <span id="grid-slider-value">0</span></p>
+              <button id="button-set-grid-size">Set Grid Size</button>
+            </div>
+          </div>
+    
+          <div class="setting--item">
+            <div class="input--container">
+              <label for="pen-color" class="input--label">Pen Color</label>
+              <input type="color" name="pen-color" id="pen-color">
+              <button id="button-set-pen-color">Apply</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    <!-- grid -->
+    <div id="grid-container" class="grid--container"></div>
+    
+    <div class="right-bar"></div>
+
+    </div>
+    
+    <footer class="footer">
+      <p>Copyright &copy; <a href="https://github.com/fath-nasrudin" target="_blank">Fathurrohman Nasrudin</a> <span id="footer-year">2023</span></p>
+    </footer>
+
+  </div>
+</body>
+</html>
